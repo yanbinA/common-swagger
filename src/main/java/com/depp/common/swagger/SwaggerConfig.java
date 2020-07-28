@@ -55,6 +55,7 @@ public class SwaggerConfig {
             });
         }
         return new Docket(DocumentationType.SWAGGER_2)
+                .host(swaggerProperties.getHost())
                 .apiInfo(apiInfo(swaggerProperties))
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(swaggerProperties.getBasePackage()))
