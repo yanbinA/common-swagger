@@ -1,0 +1,15 @@
+swagger:
+  host: localhost/user
+  base-package: com.yanbin.user.controller
+  version: 1.0.0
+  description: user
+  title: user
+  author:
+  url:
+  email:
+  parameters:
+    token:
+      name: token
+      modelRef: string
+      parameterType: header
+      required: true
