@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>2.6.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.depp.common</groupId>
@@ -14,8 +14,8 @@
     <name>swagger</name>
 
     <properties>
-        <java.version>1.8</java.version>
-        <springfox.swaagger.version>2.9.2</springfox.swaagger.version>
+        <java.version>11</java.version>
+        <springfox.swaagger.version>3.0.0</springfox.swaagger.version>
     </properties>
 
     <dependencies>
@@ -34,12 +34,7 @@
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${springfox.swaagger.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
+            <artifactId>springfox-boot-starter</artifactId>
             <version>${springfox.swaagger.version}</version>
         </dependency>
         <dependency>
